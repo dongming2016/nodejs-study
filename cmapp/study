@@ -1,0 +1,2 @@
+1.上传需使用bodyparser和multer中间件。
+2.node的运行环境如果使用鼠标定住cmd窗口后，会中断请求。
