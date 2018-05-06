@@ -28,7 +28,8 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(urlencodedParser);
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+var filePath = path.resolve() + '/uploads/';
+app.use(express.static(filePath));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
