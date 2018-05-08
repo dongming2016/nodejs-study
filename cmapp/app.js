@@ -17,6 +17,7 @@ var usersRouter = require('./routes/users');
 var userMgrRouter = require('./routes/userMgr');
 var uploaderHandler = require('./routes/uploaderHandler');
 var imgHandler = require('./routes/imgHandler');
+var heroRouter = require('./routes/hero');
 
 var app = express();
 
@@ -36,6 +37,7 @@ app.use('/users', usersRouter);
 app.use('/upload', urlencodedParser, uploaderHandler);
 app.use('/user-mgr', userMgrRouter);
 app.use('/pics', imgHandler);
+app.use('/heroes', heroRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
