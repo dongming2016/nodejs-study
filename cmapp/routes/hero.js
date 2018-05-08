@@ -16,4 +16,9 @@ router.get('/', function(req, res, next) {
     ]);
 });
 
+router.get('/:id', function(req, res, next) {
+    console.log(req.params.id);
+    res.send({id: 'alarm'});
+  });
+
 module.exports = router;
