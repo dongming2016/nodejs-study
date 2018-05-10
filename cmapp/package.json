@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node-dev ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -16,6 +16,7 @@
     "multer": "^1.3.0"
   },
   "devDependencies": {
-    "mysql": "^2.15.0"
+    "mysql": "github:mysqljs/mysql",
+    "uuid": "^3.2.1"
   }
 }
